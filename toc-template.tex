@@ -1,0 +1,15 @@
+% toc-template.tex
+
+\usepackage{titletoc}
+
+% Define a custom TOC entry format for chapters
+\titlecontents{chapter}
+  [0em] % left margin
+  {\addvspace{1em}} % above code
+  {\contentslabel{2em}} % numbered entry format
+  {\hspace{2em}} % numberless entry format
+  {\titlerule*[1pc]{.}\contentspage} % filler page format
+
+\begin{document}
+\tableofcontents
+\end{document}

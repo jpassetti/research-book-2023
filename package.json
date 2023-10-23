@@ -1,0 +1,10 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "scripts": {
+    "build": "pandoc mybook.md --pdf-engine=xelatex --template=custom.latex --citeproc --bibliography=references.bib --csl=chicago-author-date.csl -o mybook.pdf && pdftk cover.pdf mybook.pdf back.pdf cat output nh-ai-summit-book.pdf"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
